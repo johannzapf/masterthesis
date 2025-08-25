@@ -48,7 +48,7 @@ def decrypt_files(directory, key):
     cipher = Fernet(key)
     for subdir, dirs, files in os.walk(directory):
         for file in files:
-            if "sovanta" in file.lower() and (file.endswith(".csv") or file.endswith(".zip")):
+            if "sovanta" in file.lower() and (file.endswith(".csv.enc") or file.endswith(".zip.enc")):
                 file_path = os.path.join(subdir, file)
                 with open(file_path, "rb") as f:
                     encrypted_data = f.read()
