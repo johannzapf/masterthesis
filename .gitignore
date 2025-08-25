@@ -1,0 +1,8 @@
+/utils/encryption_key.key
+
+# Ignore all CSV files containing 'sovanta' that are not encrypted
+*sovanta*.csv
+# Except the open examples
+!sovanta-dataset-open-examples.csv
+
+/dataset/sovanta-dataset-documents.zip
