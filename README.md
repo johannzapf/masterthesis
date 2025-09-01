@@ -9,10 +9,10 @@ The repository is organized in the following way:
 - [error_analysis/](error_analysis) contains the code for human and LLM-based error labeling, the resulting data and its visualization
 - [user_feedback/](user_feedback) contains the data from the user preference evaluation and the resulting model leaderboard
 
-Note: All Code that requires imports from module *app* is not executable in this repository, as this code is part of the Document Chat productive application.
+Note: All Code that requires imports from module *app* is not executable in this repository, as this code is part of the Document Chat application.
 
 ## Encryption
-Since the sovanta dataset contains partially sensitive information from a productive database, all files that contain its data are encrypted in this repository.
+Since the sovanta dataset contains partially sensitive information from a production database, all files that contain its data are encrypted in this repository.
 
 The required encryption key to decrypt the files can be provided on request. [utils/encryption.py](utils/encryption.py) contains the code to decrypt the files.
 
